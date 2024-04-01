@@ -1,0 +1,599 @@
+body{
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "row1 row1"
+    "row2 row2"
+    "row3 row3"
+    "row4col1 row4col2"
+    "row5col1 row5col2"
+    "row6col1 row6col2"
+    "row7 row7";
+    justify-items: center;
+    align-items: center;
+    grid-gap: 15px;
+}
+
+.Laptop{
+    grid-area: row1;
+    width: 100%;
+}
+
+.Phone_plus{
+    grid-area: row2;
+    width: 100%;
+    background-color: black;
+}
+
+.Phone{
+    grid-area: row3;
+    width: 100%;
+}
+
+.row4col1{
+    grid-area: row4col1;
+    background-image: url('../images/online_kaigi_man.png');
+    background-color: black;
+    display: flex;
+    flex-flow: column;
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center;
+    min-width: 100%; /* Ensure the grid item has a minimum width */
+    height: 700px;
+}
+
+.row4col2{
+    grid-area: row4col2;
+    display: flex;
+    flex-flow: column;
+    background-image: url('../images/techglasses.png');
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center;
+    min-width: 100%; /* Ensure the grid item has a minimum width */
+    height: 700px;
+}
+
+
+.row5col1{
+    grid-area: row5col1;
+    background-image: url('../images/tv.png');
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center;
+    min-width: 100%; /* Ensure the grid item has a minimum width */
+    height: 700px;
+    background-color: black;
+    display: flex;
+    flex-flow: column;
+}
+
+.row5col2{
+    grid-area: row5col2;
+    display: flex;
+    flex-flow: column;
+    background-image: url('../images/earphones.png');
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center;
+    min-width: 100%; /* Ensure the grid item has a minimum width */
+    height: 700px;
+    background-color: black;
+}
+
+.row6col1{
+    grid-area: row6col1;
+    display: flex;
+    flex-flow: column;
+    background-image: url('../images/card.png');
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center;
+    min-width: 100%; /* Ensure the grid item has a minimum width */
+    height: 700px;
+}
+
+.row6col2{
+    grid-area: row6col2;
+    display: flex;
+    flex-flow: column;
+    background-image: url('../images/trade.png');
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center;
+    min-width: 100%; /* Ensure the grid item has a minimum width */
+    height: 700px;
+}
+
+.row7{
+    grid-area: row7;
+    width: 100%;
+}
+
+.tvbanner{
+    display: flex;
+    flex-direction: row;
+    /* overflow: hidden; */
+    flex-wrap: nowrap;
+    width: 100%; /* Make the image fill its container */
+    height: auto;
+    animation: slide 30s infinite; /*Adjust duration for number of images */
+}
+
+.tvbanner a img{
+    flex-shrink: 0;
+    width: 60vw;
+    height: auto;
+    transition: transform 5s ease-in-out;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+  100% { transform: translateX(-440%); }
+}
+
+
+h1{
+    font-size: 64px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -.005em;
+    display: none;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 1.08349;
+    font-weight: 600;
+    letter-spacing: -.005em;
+    justify-self: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+h3{
+    font-size: 40px;
+    line-height: 1.09500;
+    font-weight: 600;
+    letter-spacing: .004em;
+}
+
+h4{
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    letter-spacing: .004em;
+}
+
+h5{
+    font-size: 24px;
+    line-height: 1.160;
+    font-weight: 600;
+    letter-spacing: .004em;
+}
+
+h6{
+    font-size: 16px;
+    line-height: 1.200;
+    font-weight: 600;
+    letter-spacing: .004em;
+}
+
+p{
+    text-wrap: wrap;
+    width: 100%;
+    font-size: 26px;
+    line-height: 1.14286;
+    font-weight: 400;
+    letter-spacing: .007em;
+    margin-top: 6px;
+}
+
+
+
+.btn{
+    border-style: solid;
+    border-width: 1px;
+    min-width: 28px;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background-color: rgb(0, 113, 227);
+    border-radius: 980px;
+    color: #fff;
+    margin-right: 15px;
+}
+.btn:hover{
+    background-color: #0077ED;
+}
+
+.btn-primary{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(0, 113, 227);
+    background:#f5f5f7;
+    min-width: 28px;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 980px;
+    color:rgb(0, 113, 227);
+}
+
+.btn-primary:hover{
+    background-color: rgb(0, 113, 227);
+    color: #fff;
+}
+
+.btn-link{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(0, 113, 227);
+    background:#1F1F1F;
+    min-width: 28px;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 980px;
+    color:rgb(0, 113, 227);
+}
+
+.btn-link:hover{
+    color:#fff;
+    background:rgb(0, 113, 227);
+}
+
+.h2_image{
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+}
+
+.buy_learn{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.buy_learn_small{
+    display: flex;
+    justify-content: center;
+    margin-top: 590px;
+    font-size: 16px;
+}
+
+.bls_bottom{
+    display: flex;
+    justify-content: center;
+    margin-top: 225px;
+    margin-right: -10px;
+    font-size: 16px;
+}
+
+.h2i2{
+    width: auto;
+    height:auto
+}
+
+.whitetext{
+    margin-top: 20px;
+    color: white;
+}
+
+.blacktext{
+    margin-top: 20px;
+}
+
+.h2i3{
+    width: auto;
+    height:50%;
+    margin-top: 150px;
+}
+
+ @media screen and (max-width: 767px){
+
+    body{
+        padding-top: 40px;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "row1"
+        "row2"
+        "row3"
+        "row4col1"
+        "row4col2"
+        "row5col1"
+        "row5col2"
+        "row6col1"
+        "row6col2";
+        justify-content: center;
+        align-items: center;
+        grid-gap: 10px;
+    }
+
+
+.row4col1{
+    grid-area: row4col1;
+    background-image: url('../images/online_kaigi_man.png');
+    background-size: cover;
+    background-color: black;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure the grid item has a minimum width */
+    height: 300px;
+}
+
+.row4col2{
+    grid-area: row4col2;
+    display: flex;
+    flex-flow: column;
+    background-image: url('../images/techglasses.png');
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure the grid item has a minimum width */
+    height: 300px;
+}
+
+.row5col1{
+    grid-area: row5col1;
+    background-image: url('../images/tv.png');
+    background-size: cover;
+    background-color: black;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure the grid item has a minimum width */
+    height: 300px;
+}
+
+.row5col2{
+    grid-area: row5col2;
+    display: flex;
+    flex-flow: column;
+    background-image: url('../images/earphones.png');
+    background-size: cover;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure the grid item has a minimum width */
+    height: 300px;
+}
+
+
+.row6col1{
+    grid-area: row6col1;
+    display: flex;
+    flex-flow: column;
+    background-image: url('../images/card.png');
+    background-size: cover;
+    width: 100%; /* Ensure the grid item has a minimum width */
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.row6col2{
+    grid-area: row6col2;
+    display: flex;
+    flex-flow: column;
+    background-image: url('../images/trade.png');
+    background-size: cover;
+    width: 100%; /* Ensure the grid item has a minimum width */
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+    .MacBook_Air{
+        grid-area: row1;
+        display: flex;
+        justify-items: center;
+       align-items: center;
+       width: 100vw;
+    }
+
+    .iPhone_15_Pro{
+        grid-area: row2;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-color: black;
+        width: 100vw;
+    }
+
+    .iPhone_15{
+        grid-area: row3;
+        display: flex;
+       justify-content: center;
+       align-content: center;
+       width: 100vw;
+    }
+
+    .row7{
+        width: 100%;
+        display: none;
+    }
+
+
+    .h2_image{
+        width: 80%;
+        height: 80%;
+        align-self: center;
+        justify-self: center;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    .buy_learn{
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .h2i1{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height:100%;
+    }
+
+    .h2i3{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height:100%;
+        margin-top: 10%;
+    }
+
+    .buy_learn_small{
+        display: flex;
+        justify-content: center;
+        margin-top: 250px;
+        font-size: 11px;
+        width: 100%;
+        height: 35px;
+    }
+
+    .bls_bottom{
+        display: flex;
+        justify-content: center;
+        margin-top: -90px;
+        margin-right: -10px;
+        font-size: 11px;
+        width: 100%;
+        height: 35px;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1300px){
+
+    .body{
+        width: 100vw;
+    }
+
+    .h2_image{
+      overflow: hidden;
+    }
+
+
+    .row4col1{
+        grid-area: row4col1;
+        background-image: url('../images/online_kaigi_man.png');
+        background-color: black;
+        display: flex;
+        flex-flow: column;
+        background-size: cover;
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+        background-position: center;
+        width: 100%; /* Ensure the grid item has a minimum width */
+        height: 350px;
+    }
+
+    .row4col2{
+        grid-area: row4col2;
+        display: flex;
+        flex-flow: column;
+        background-image: url('../images/techglasses.png');
+        background-size: cover;
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+        background-position: center;
+        width: 100%; /* Ensure the grid item has a minimum width */
+        height: 350px;
+    }
+
+
+    .row5col1{
+        grid-area: row5col1;
+        background-image: url('../images/tv.png');
+        background-size: cover;
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+        background-position: center;
+        width:80%; /* Ensure the grid item has a minimum width */
+        height: 300px;
+        background-color: black;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .row5col2{
+        grid-area: row5col2;
+        display: flex;
+        flex-flow: column;
+        background-image: url('../images/earphones.png');
+        background-size: cover;
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+        background-position: center;
+        min-width: 100%; /* Ensure the grid item has a minimum width */
+        height: 300px;
+        background-color: black;
+    }
+
+    .row6col1{
+        grid-area: row6col1;
+        display: flex;
+        flex-flow: column;
+        background-image: url('../images/card.png');
+        background-size: cover;
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+        background-position: center;
+        min-width: 100%; /* Ensure the grid item has a minimum width */
+        height: 300px;
+    }
+
+    .row6col2{
+        grid-area: row6col2;
+        display: flex;
+        flex-flow: column;
+        background-image: url('../images/trade.png');
+        background-size: cover;
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+        background-position: center;
+        min-width: 100%; /* Ensure the grid item has a minimum width */
+        height: 300px;
+    }
+
+    .buy_learn_small{
+        display: flex;
+        justify-content: center;
+        margin-top: 300px;
+        font-size: 12px;
+    }
+
+    .bls_bottom{
+        display: flex;
+        justify-content: center;
+        margin-top: 90px;
+        margin-right: -10px;
+        font-size: 12px;
+    }
+}
